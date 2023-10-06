@@ -1,0 +1,151 @@
+hostnamectl set-hostname #newname (use this to change hostname)
+ls -l (will list the files with full details)
+ls -arl #address (list all files inside the folder,[including hidden])
+ls -lah #address (list all files sizes and details , as well as they are easy to read)
+ls -s #address (display the sizes of all files)
+ls -alt #address (list all files with size as per date modified)
+pwd - (prints current directory)
+cd #address (to change directory)
+cd .. (we will move to the previous folder)
+
+-----------------------------------------------------------------------
+
+#HOW TO ADD NEW USER WITH SUDO PERMISSION :
+
+
+useradd -m #username 
+passwd #password (to create a new user)
+
+usermod -a -G sudo #username (to add new user to the sudo group)
+( -a means add , -G sudo means add the user to sudo group)
+
+chsh -s /bin/bash #username (to specify shell for new user)
+(chsh means change login shell , -s it is the name of the shell you want for user ,in this case /bin/bash
+
+
+-----------------------------------------------------------------------
+
+man #linuxcmd (shows manual details of the command)
+cat #filename (will show contents in the file)
+
+cat >>#txtfilename
+#typecontent (Then press CTRL+C , to concatenate)
+
+cat >#txtfilename
+#typenewcontent (Then press CTRL+C , will remove old content and replace with new content)
+
+cat #address | head -n #number (will show n number of lines ,here we used pipe '|' command)
+
+echo '#content' >>#txtfilename
+
+grep -r #name #address (will show the full path of matched patterns)
+
+grep -v -e '^#name' #address (will show parameters that do not match with #name ) 
+
+mkdir #name (to create a folder/directory)
+mkdir -p #name1/name2 (to create two folders at a time)
+
+touch #filename (to create new text file)
+
+rm #foldername (will remove the directory/folder)
+rm -d #foldername (will only remove empty directory/folder)
+rm -rf #foldername (rf means recursive force which will forcely remove the folder/directory)
+
+cp -v #filename #address (to copy paste a file) 
+mv #filename #newname (to rename a file)
+mv #filename #address (used to move the file to specific folder)
+
+find / -iname "*#filename" (to find files with the mentioned name)
+Example : find / -iname "*.nse" (this will find the files with .nse extension)
+
+cut -d '#char' -f1 #address (will cut the lines from specific character and print)
+Example : cut -d ':' -f1 #address (will cut the lines from ":" and print)
+
+chown nobody:games #filename (to change the ownership of the file)
+
+
+------------------------------------------------------------------------
+
+HOW TO CHANGE IP ADDRESS :-
+
+ifconfig (shows the current status of the active interfaces)
+ifconfig eth0 #newipaddress netmask #subnetmask (to change ip address) 
+ifconfig eth0 (to check whether the ip is changed)
+
+------------------------------------------------------------------------
+
+ls /etc/init.d (will show all services in linux)
+service --status-all (will show current status of all services)
+systemctl status #service_name (will show status and details of the specific service)
+service #name status (will show status and details of the specific service)
+service #name start (will start the service)
+
+
+deluser #username (to delete a user)
+ps (will provide a snapshot of current processes)
+ps -ef (shows all the processes within the system)
+pstree (show the running processes in a tree)
+
+
+ps aux | grep #process
+kill -9 #PID (will kill the process)
+
+apt-get install #package_name (cmd used to install packages from repo)
+apt-get update && apt-get upgrade (will update all packages that are already installed)
+apt search #package_name (to search for a specific package)
+apt-get remove #package_name (to remove a specific package)
+
+
+iptables -L (will show the list of chains such as imput , forward & output)
+iptables -F (F means flush , this cmd will delete the table data )
+iptables -P #chain #cmd (this cmd is used to change rules of the chain)
+Example : iptables -P OUTPUT DROP (which will deny all outbound connections)
+
+iptables -A INPUT -i lo -j ACCEPT   (this cmd will accept the inbound connections which is destined for local network)
+(-A means append , -i means interface , lo means localhost , -j means jumpto)
+
+iptables -L -v (will give more details)
+(-L means list , -v means verbose .ie)more details)
+iptables -S (this cmd will show all the previous cmnds you've entered in ip tables)
+
+ufw active (this cmd will activate ufw firewall)
+ufw status (this cmd will show the status of ufw)
+
+tcpdump -D (will show all available interfaces to monitor)
+tcpdump -i #interface (this will capture data packets)
+tcpdump -n -i #interface (capture packets but replaces domain with ip)
+tcpdump -i any dst port 53 (will check if port 53 is running)
+
+
+ssh user@x.x.x.x 
+Example: ssh tryhackme@10.15.64.12  (used to remotely access any system using ssh)
+
+scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt (use this cmd to copy file from your device to a remote device)
+
+scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt  (use this cmd to copy file from a remote device to your device)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

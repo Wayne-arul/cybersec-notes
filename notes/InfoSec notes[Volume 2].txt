@@ -1,0 +1,8 @@
+Firewall in Linux
+In linux , packet filtering/net filter will happen with the help of iptables.
+When a data packet is came from internet , it will first reach the firewall for acceptance or rejectance by using iptables . In linux , net filter uses Command line interface.
+
+Syslog 
+It is used to moniter the network 
+
+

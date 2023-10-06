@@ -1,0 +1,36 @@
+google query operator
+intext:username classified top secret login filetype:xls
+
+Information Gathering Tools
+
+maltego
+wireshark
+dig
+dnsrecon
+nmap
+
+Nmap commands
+cat nec.txt | grep PTR | awk '{print $4}' > necip.txt
+
+when we do Tcp scan on a device , we get the port 80 open . Then we do a Maimon scan on same device , we get port 80 closed , which means that the system is using windows.
+
+
+nmap -D 192.168.29.29 www.yahoo.com,www.google.com,ME 192.168.29.226 
+
+(-D means decoy . When we scan target computer , they could not able to find the person who scanned )
+
+
+To study
+1)nmap - automation & scripting
+2)wireshark filters
+3)metasploit - msfvenom 
+4)Buffer overflow
+5)Fuzzing
+6)Exploit development (remote code execution)
+7)Google dorking
+8)
+
+
+
+
+

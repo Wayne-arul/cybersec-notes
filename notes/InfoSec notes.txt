@@ -1,0 +1,142 @@
+Canary Tokens 
+These tokens are used to set traps .When someone opened our token file , folder , mail or link  ,at that time we will receive an alert mail that someone is snooping around.
+Build your own Canary Token Server : https://www.youtube.com/watch?v=I2EqfDShOKQ&t=1027s
+
+Privacy
+privacy is that people don't know what you're doing but they know who you are.
+
+Anonymity 
+anonymity is that people know what are the things done , but they don't know who did it.
+
+Pseudonymity
+It is same as anonymity but we use a alias username and identity, like we pretend to someone or logo etc.
+Example : Doing things with fake identity such as Satoshi Nakamoto , the creator of BitCoin which is not his original identity.
+
+Risk Assessment Process
+In companies , the authority have to choose the assets to be secured . This is called as Risk Assessment Process. This has to be done at early stages. There are some methodolodies such as SABSA , ISO/IEC 27005:2011 etc.
+SABSA - Sherwood Applied Business Security Architecture.
+
+*Main point is that 100% security is not possible even if we used any kind of security that exist in this world.
+*The amount of Privacy and Anonymity that you require is directly proportional to the amount of security you need.
+
+Defense in Depth:
+If one defense fails then it continues to provide defense.
+Prevention , Detection and Recovery.
+First we have to prevent with the help of security.
+Then we have to Detect , how and who with some canary.
+Finally you have to Recover the lost or stolen things with the help of backup or something. 
+
+Malware
+1)Macro Virus - Like word document and excel docs will be embedded with macros and VBAscripts which can run these macro viruses.
+
+2)Stealth Virus - This will try to trick the anti-virus software to hide the modifications made .
+
+3)Polymorphic virus - This will change its form but not the code written . It changes itself to avoid Signature detection.
+
+4)Self-garbling virus - This will modify the attack code by itself , to hide from antivirus.
+
+5)Bots & Zombies - Bunch of hacked computers or devices controlled by a hacker group. Maybe a Botnet attack.
+
+6)Worms - these viruses spread from one device to another.
+
+7)Rootkits - It is a bunch of softwares used to remotely access target computer without them knowing.
+
+8)Firmware rootkit - For example : you may have the malware in your harddrive firmware chip , which will format and reinstall your OS.
+
+9)Keylogger - These are softwares used by hackers to moniter the target and to get access to your personal data . This process happen by logging your keyboard strokes which means whatever you type they will know.
+
+10)Trojon horse - The simple programs that are appear to be one thing but actually a virus which hackers could access your computer remotely. 
+
+11)Remote Access Tool(RAT) - This will be a software that we install , which hackers could remotely access our computers like TeamViewer.
+
+RANSOMWARE - This will completely encrypt all of your files with a key which the hacker has , they will demand some money or information in return for the encryption key.
+
+SPYWARE - It is an intelligence gathering malware which hackers use to gather information from you not to damage your computers but to compromise your privacy and anonymity.
+
+ADWARE - It is which browser contains malware .For example : when you search for a thing but the browser will redirect you to someother pages which contains malware .
+When a malware takes over your browser , which is called Browser Hijacking.
+
+SCAREWARE - For example : when you visit a webpage , then suddenly a pop-up comes in and tells that your device is not secure and contains malware , like these are called as Scareware. 
+
+Phishing - It is a method to steal details from users through website
+
+Vishing - It is a method to steal personal information from a victim through calls. Such as calling a person and pretend to be a bank manager and getting details from the.
+
+Smishing - It is a method to steal information of a person by spamming sms.
+
+DOXING - doxing means doing a research on an individual or company or particular organization to find personal and private information.
+
+CRYPTO MINING MALWARE - When we visit some websites , which is injected with some scripts to use our CPU for mining.
+While we are at website , they will be mining cryptocurrencies using our CPU. For example : when you encounter a captcha , it will take some time to complete it .At that period of time the guy will use our CPU for mining cryptocurrency for his own good. 
+
+ENCRYPTION
+It is a method to secure our data by encrypting with a password or a key. It is of two parts . Algorithm and key . Lets consider a padlock as Algorithm and key as password. We need both of them to decrypt.
+
+Symmetric Encryption 
+It uses only one key for encryption.
+Types of algorithms used in this are 
+*Data Encryption Standard(DES)
+*Triple-DES(3DES)
+*Blowfish
+*RC4
+*RC5
+*RC6
+*AES(Advanced Encryption Standard)
+
+Asymmetric Encryption
+It uses two keys for encryption (public & private). For example :
+Sender and receiver both have their own public & private key.
+Public key is known by everyone.So sender encrypts a txt file with the public key of the receiver and then send it to receiver. As the receiver have the private key of his own ,only he could be able to open it.
+Types of Algorithms used in this are
+*Rivest-Shamir-Adleman(RSA)
+*Elliptic Curve Cryptosystem(ECC)
+*Diffie-Hellman(DH)
+*El Gamal
+
+Hash Functions
+It will convert the message with hash functions into fixed string of characters.We can't convert it back to the original form. So no keys are required.
+
+SSL STRIPPING
+It is the process of accessing target computer in a distance in which we pretends to be the something that the target seek for. Example : ARP Spoofing.
+
+Digital Certificate
+digitally signed certificates that will confirm that the key is from the right owner.
+
+Security based OS
+1)Qubes OS (recommended)
+2)Subgraph OS
+3)Trisquel Linux
+4)Hardened Gentoo OS
+5)Pure OS
+6)Astra Linux
+
+Anonymity based OS
+1)Tails OS (recommended)
+2)Whonix OS 
+3)Qubes OS (overall best)
+
+Pen testing & hacking based OS
+1)Kali Linux (recommended)
+2)Parrot OS (recommended)
+3)BlackArch Linux
+4)BlackBox Linux 
+5)Pentoo OS
+
+Mobile security and privacy based OS
+1)Lineage OS
+2)Sailfish OS
+3)Replicant OS
+4)OmniROM
+5)MicroG
+6)Pure OS
+
+
+//Hypervisor is nothing but the virtual box
+
+-----------------------------------------------------------------
+
+VIRTUAL MACHINES
+
+Type 1 - native (BareMetal)
+In this hardware will directly run the Hypervisor , which means there aren't any host operating systems. 
+Example : VMware ESX/ESXi , Orcale VM server , Microsoft Hyper-V and XenServer.
